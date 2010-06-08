@@ -12,4 +12,4 @@ FILES=: 0 : 0
 afm.ijs
 )
 
-RELEASE=: 'j701'
+RELEASE=: 'j602 j701'
