@@ -69,7 +69,7 @@ NB. )
 NB.
 NB. fnt=. <;._2 IFUNIX pick ms;ux
 
-fnt=. <;._2  (0 : 0)
+fnt=. <;._2 (0 : 0)
 0 Arial
 0 Sans
 0 SansSerif
