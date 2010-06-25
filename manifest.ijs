@@ -1,4 +1,4 @@
-NB. font/afm manifest
+NB. graphics/afm manifest
 
 CAPTION=: 'AFM'
 
@@ -10,6 +10,7 @@ VERSION=: ''
 
 FILES=: 0 : 0
 afm.ijs
+history.txt
 )
 
 RELEASE=: 'j602 j701'
