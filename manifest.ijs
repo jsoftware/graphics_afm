@@ -6,7 +6,7 @@ DESCRIPTION=: 0 : 0
 Adobe Font Metrics
 )
 
-VERSION=: ''
+VERSION=: '1.0.0'
 
 FILES=: 0 : 0
 afm.ijs
