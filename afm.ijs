@@ -162,7 +162,7 @@ ZapfDingbats
 PSFONTNAMES=: <;._2 j
 PSFONTNAMESLC=: <;._2 tolower j -. '-'
 PSFONTNAMESNH=: <;._2 j -. '-'
-fnt=. <;._2 (0 : 0)
+fntms=. <;._2 (0 : 0)
 0 Arial
 0 Sans
 0 SansSerif
@@ -177,9 +177,29 @@ fnt=. <;._2 (0 : 0)
 3 Symbol
 )
 
-ISIFONTNAMES=: 2 }. each fnt
+ISIFONTNAMES=: 2 }. each fntms
 ISIFONTNAMESLC=: tolower each ISIFONTNAMES
-ISIFONTNAMESX=: 0 ". &> 2 {. each fnt
+ISIFONTNAMESX=: 0 ". &> 2 {. each fntms
+
+fntux=. <;._2 (0 : 0)
+0 Helvetica
+0 Sans
+0 SansSerif
+1 Courier
+1 Lucida Console
+1 Mono
+1 Monospace
+2 Serif
+2 Times
+2 Times New Roman
+2 Times New Roman
+3 Symbol
+)
+
+fnt=. IFUNIX {:: fntms ;< fntux
+GTKFONTNAMES=: 2 }. each fnt
+GTKFONTNAMESLC=: tolower each GTKFONTNAMES
+GTKFONTNAMESX=: 0 ". &> 2 {. each fnt
 getbbox=: 3 : 0
 (Chars i. y) { Boxes
 )
