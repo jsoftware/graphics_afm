@@ -86,11 +86,16 @@ if. ndx < #PSFONTNAMESLC do.
   fnx=. <. ndx % 4
   sty=. 4 | ndx
 else.
-  ndx=. ISIFONTNAMESLC i. nam
-  if. ndx < # ISIFONTNAMESLC do.
-    fnx=. ndx { ISIFONTNAMESX
+  ndx=. GTKFONTNAMESLC i. nam
+  if. ndx < # GTKFONTNAMESLC do.
+    fnx=. ndx { GTKFONTNAMESX
   else.
-    fnx=. (#FONTNAMESLC) | FONTNAMESLC i. nam
+    ndx=. ISIFONTNAMESLC i. nam
+    if. ndx < # ISIFONTNAMESLC do.
+      fnx=. ndx { ISIFONTNAMESX
+    else.
+      fnx=. (#FONTNAMESLC) | FONTNAMESLC i. nam
+    end.
   end.
 end.
 if. 0 = sty do.
@@ -101,6 +106,13 @@ ang=. {. 90 270 #~ ('angle900';'angle2700') e. fnt
 fnx,sty,siz,ang,und
 )
 getfontid=: 3 : 0
+if. ischar y do.
+  getfont y
+else.
+  y
+end.
+)
+getgtkfontid=: 3 : 0
 if. ischar y do.
   getfont y
 else.
