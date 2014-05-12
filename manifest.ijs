@@ -6,7 +6,7 @@ DESCRIPTION=: 0 : 0
 Adobe Font Metrics
 )
 
-VERSION=: '1.0.9'
+VERSION=: '1.0.10'
 
 FILES=: 0 : 0
 afm.ijs
@@ -14,4 +14,3 @@ history.txt
 )
 
 RELEASE=: 'j802'
-PLATFORMS=: 'linux win darwin android'
