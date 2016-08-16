@@ -20,7 +20,7 @@ Boxes=: Boxes, <. average Boxes
 
 destroy=: codestroy
 average=: +/ % #
-ischar=: 3!:0 e. 2 131072"_
+ischar=: 3!:0 e. 2 131072 262144"_
 getascender=: 3 : 0
 'fnt sty siz ang und'=. 5 {. y
 nam=. getfntnameNH fnt,sty
