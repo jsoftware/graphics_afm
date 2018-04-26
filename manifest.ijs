@@ -13,4 +13,6 @@ afm.ijs
 history.txt
 )
 
-RELEASE=: 'j802 j803 j804 j805 j806 j807'
+RELEASE=: ''
+
+FOLDER=: 'graphics/afm'
