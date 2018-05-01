@@ -1,3 +1,3 @@
 NB. build
 
-load '~Addons/graphics/afm/source/source/afmdev/save.ijs'
+load '~Addons/graphics/afm/source/afmdev/save.ijs'

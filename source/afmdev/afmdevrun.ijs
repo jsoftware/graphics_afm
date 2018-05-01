@@ -2,8 +2,8 @@ NB. run
 
 NB. =========================================================
 readfonts=: 3 : 0
-load '~Addons/graphics/afm/source/source/afmdev/readafm.ijs'
-p=. jpath '~Addons/graphics/afm/source/source/afmdev/'
+load '~Addons/graphics/afm/source/afmdev/readafm.ijs'
+p=. jpath '~Addons/graphics/afm/source/afmdev/'
 
 NB. ---------------------------------------------------------
 readafm1 'Courier';p,'courier.afm'
@@ -26,5 +26,5 @@ NB. =========================================================
 readafm1=: 3 : 0
 'name file'=. y
 a=. readafm y
-a fwrites jpath '~Addons/graphics/afm/source/source/afm/',(tolower name),'.ijs'
+a fwrites jpath '~Addons/graphics/afm/source/afm/',(tolower name),'.ijs'
 )
